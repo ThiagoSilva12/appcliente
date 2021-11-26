@@ -37,19 +37,25 @@ txtbtnlogar:{
     color:'red'
 },
 btncadastrar:{
-    position:"absolute",
-    bottom:100,
+    //position:"absolute",
+    //bottom:100,
     backgroundColor:'#000',
     padding: 10,
-    borderRadius:50
+    borderRadius:50,
+
 },
 txtbtncadastrar :{
     fontSize:20,
     fontWeight:"bold",
     color:'red',
-    textTransform:"uppercase"
+    textTransform:"uppercase",
+    textAlign:"center"
 },
-
+titulos:{
+    fontSize:30,
+    fontWeight:"bold",
+    textAlign:"center"
+},
 
 
 

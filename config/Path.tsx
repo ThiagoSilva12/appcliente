@@ -1,1 +1,1 @@
-export const servidor = 'http://ipdamaquina:3000/api/cliente';
+export const servidor = 'http://192.168.56.1:3000/api/cliente';
