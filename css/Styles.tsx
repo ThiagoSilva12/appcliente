@@ -56,13 +56,42 @@ titulos:{
     fontWeight:"bold",
     textAlign:"center"
 },
-
-
-
-
-
-
-
+cliente:{
+    padding:20,
+    backgroundColor:'#fff',
+    shadowColor:'silver',
+    shadowOffset:{width:10,height:10},
+    shadowOpacity:1,
+    shadowRadius:10,
+    elevation:10,
+    marginBottom :20
+},
+nome:{
+    fontSize:15,
+    fontWeight:'bold'
+},
+cpf:{
+    fontSize:12,
+    fontWeight:'bold'
+},
+email:{
+    fontSize:15,
+    color:'#f00',
+    fontWeight:'bold'
+},
+usuario:{
+    fontSize:15,
+    color:"teal",
+    fontWeight:"bold"
+},
+imgcliente:{
+    width:"100%",
+    height:200,
+    resizeMode:'cover'
+},
+scroll:{
+    width:"100%",
+}
 
 
 })
