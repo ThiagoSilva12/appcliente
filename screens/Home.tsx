@@ -35,7 +35,7 @@ React.useEffect(()=>{
         headers:{
             accept:'application/json',
             'content-type':'application/json',
-            'token':rs,
+            token: rs,
         }
     })
     .then((response)=>response.json())
@@ -64,7 +64,7 @@ React.useEffect(()=>{
                    <Text style={styles.email}>E-Mail:  {item.email}</Text>
                    <Text style={styles.usuario}>Usuário:  {item.usuario}</Text>
                     <TouchableOpacity onPress={()=>{
-                        navigation.navigate("Atualizar",{cliente:item});
+                        navigation.navigate("Atualizar",{cliente:item , token:rs});
 
                     }}>
                    <AntDesign name="edit" size={24} color="black" />

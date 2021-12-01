@@ -91,7 +91,17 @@ imgcliente:{
 },
 scroll:{
     width:"100%",
-}
-
-
-})
+},
+apagar:{
+    textAlign:"center",
+    padding:20,
+    borderRadius:10,
+    borderWidth:1,
+    borderColor:'red'
+},
+txtbtnapagar:{
+    fontSize:15,
+    textAlign:'center',
+    fontWeight:"bold"
+},
+});
