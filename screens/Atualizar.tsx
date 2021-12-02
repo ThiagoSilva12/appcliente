@@ -94,28 +94,24 @@ let r =false;
         },
         {
             text:"Apagar",
-            onPress:()=> r = true,
+            onPress:()=> {
+                fetch(`${servidor}/apagar/${idcliente}`,{
+                    method:"DELETE",
+                    headers:{
+                        accept:"application/json",
+                        "content-type":"application/json",
+                        "token":rs
+                    }    
+                    }).then((response)=>response.status)
+                    .then((dados)=>{
+                        if(dados.toString() == "204"){
+                            Alert.alert("Apagado","Conta excluida");
+                        }
+                        else{
+                            Alert.alert("Atenção","Não foi possivel apagar a conta")
+                        }
+                    }).catch((erro)=>console.error(`Erro ao ler o api ->${erro}`))
+            }
         }
     ]);
-
-    if(r){
-        fetch(`${servidor}/apagar/${idcliente}`,{
-        method:"DELETE",
-        headers:{
-            accept:"application/json",
-            "content-type":"application/json",
-            "token":rs
-        }    
-        }).then((response)=>response.json())
-        .then((dados)=>{
-            if(!dados){
-                return Alert.alert("Apagado","Conta excluida");
-            }
-            else{
-                Alert.alert("atenção",dados.output)
-            }
-        }).catch((erro)=>console.error(`Erro ao ler o api ->${erro}`))
-    }
-
-
 }
